@@ -1,0 +1,44 @@
+
+.interesting__info{
+    margin-top: 85px;
+}
+
+
+.interesting__info .interesting__info-title{
+    font-family: 'Trebuchet MS';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.interesting__info .interesting__info-content{
+    overflow: scroll;
+}
+
+.interesting__info .interesting__info-wrapper{
+    width: 1110px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 21px;
+}
+
+
+.interesting__info .interesting__info-button{
+    width: 311px;
+    height: 71px;
+    margin: 0 auto;
+    margin-top: 37px;
+}
+
+
+@media (max-width: 767px) {
+    .interesting__info .interesting__info-wrapper{
+        width: max-content;
+        gap: 30px;
+    }
+    .interesting__info .interesting__info-button{
+        width: 170px;
+        height: 37px;
+    }
+}
+

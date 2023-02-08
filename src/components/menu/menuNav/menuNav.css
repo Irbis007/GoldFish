@@ -1,0 +1,30 @@
+
+
+.menu__nav{
+    margin-top: 16px;
+}
+
+.menu__nav .list{
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    justify-content: space-between;
+    row-gap: 20px;
+}
+
+.menu__nav .link{
+    font-size: 16px;
+    color: #2a2a2a;
+    text-decoration: none;
+    transition: all .1s;
+}
+
+.menu__nav .link:hover{
+    color: #F9A43F;
+}
+
+@media (max-width: 991px) {
+    .menu__nav .link{
+        font-size: 14px;
+    }
+}
+

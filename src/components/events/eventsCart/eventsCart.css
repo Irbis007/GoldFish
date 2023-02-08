@@ -1,0 +1,76 @@
+
+.event-cart{
+    width: 540px;
+    height: 394px;
+    border-radius: 9px;
+    overflow: hidden;
+    position: relative;
+}
+
+.event-cart .cart-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(42, 42, 42, .79);
+
+    color: white;
+    font-family: 'Trebuchet MS';
+    padding: 22px 18px 22px 28px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 248px);
+    align-items: center;
+    row-gap: 11px;
+}
+
+.event-cart .cart-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.event-cart .cart-title{
+    color: rgba(249, 164, 63, 1);
+    font-family: 'Trebuchet MS';
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.event-cart .cart-date{
+    font-size: 16px;
+    line-height: 22px;
+    text-align: right;
+}
+
+.event-cart .cart-descr{
+    grid-column: 1/3;
+    font-size: 16px;
+    line-height: 21px;
+
+}
+
+@media (max-width: 767px) {
+    .event-cart{
+        width: 390px;
+        height: 261px;
+    }
+    .event-cart .cart-content{
+        padding: 10px 13px;
+        grid-template-columns: 370px;
+        grid-template-rows: repeat(3, auto);
+        row-gap: 6px;
+    }
+    .event-cart .cart-date{
+        grid-column: 1/2;
+        text-align: left;
+    }
+    .event-cart .cart-date, .event-cart .cart-descr{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .event-cart .cart-title{
+        font-size: 16px;
+        line-height: 18px;
+    }
+}

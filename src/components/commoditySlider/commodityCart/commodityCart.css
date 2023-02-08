@@ -1,0 +1,109 @@
+
+
+.commodity__cart{
+    box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
+    border-radius: 9px;
+    height: 410px;
+    width: 255px;
+    padding: 15px 31px 31px 31px;
+    background-color: #fff;
+    font-family: 'Trebuchet MS';
+    margin: 0;
+}
+
+.commodity__cart .cart-instruction, .instruction-max__players, .instruction-game__time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    margin-top: 4px;
+}
+
+.commodity__cart .cart-instruction{
+    gap: 22px;
+}
+
+.instruction-max__players, .instruction-game__time{
+    gap: 5px;
+}
+
+.commodity__cart .cart-body{
+    margin-top: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 9px;
+}
+
+.commodity__cart .cart-title{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 125%;
+    min-height: 40px;
+}
+
+.commodity__cart{
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.commodity__cart-cart{
+    border-radius: 9px;
+    padding: 9px 28px;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+}
+
+.commodity-cart .cart__icon{
+    width: 22px;
+    height: 22px;
+}
+
+.commodity__cart .cart-img{
+    width: max-content;
+    margin: 0 auto;
+    min-height: 168px;
+}
+
+.discount__slide{
+    position: relative;
+}
+
+.discount__slide::after{
+    position: absolute;
+    content: '-15%';
+    top: 15px;
+    right: 21px;
+
+    width: 69px;
+    height: 29px;
+    background-color: #F9A43F;
+    border-radius: 14px;
+
+    font-size: 16px;
+    color: white;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.discount__slide .cart-prices{
+    display: flex;
+    gap: 18px;
+}
+
+.discount__slide .cart-prices .old-price{
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: line-through;
+}

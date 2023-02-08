@@ -1,0 +1,104 @@
+
+
+.slider{
+    height: 320px;
+}
+
+.slide__block{
+    position: relative;
+}
+
+.slide__wrapper{
+    margin: 0 15px;
+    border-radius: 6px;
+    height: 320px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider .slick-prev{
+    left: 100px !important;
+    z-index: 10;
+}
+
+.slider .slick-next{
+    right: 100px !important;
+    z-index: 10;
+}
+
+.slider .slick-dots{
+    position: absolute;
+    bottom: 15px;
+}
+
+.slider .slick-dots li{
+    width: 23px ; 
+    height: 3px;
+    background-color: #929292 ;
+    border-radius: 1px;
+    list-style: none;
+}
+.slider .slick-dots li.slick-active{
+    background-color: #fff ;
+}
+
+.slider .slick-dots li button::before{
+    content: '';
+}
+
+
+.slide__content{
+    position: absolute;
+    z-index: 100;
+    color: #fff;
+    bottom: 30px;
+}
+
+.slide__txt{
+    left: 40px;
+}
+
+.slider__button{
+    padding: 8px 30px;
+    background: linear-gradient(184.53deg, #F9A43F 5.27%, #FB791B 91.78%);
+    border: none;
+    border-radius: 9px;
+    right: 40px;
+
+}
+
+.slider__subtitle{
+    font-size: 14px;
+    line-height: 120%;
+    font-family: 'Trebuchet MS';
+}
+
+.slider__title{
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'Trebuchet MS';
+    line-height: 120%;
+}
+
+
+.slick-track{
+    display: flex;
+}
+@media (max-width: 767px) {
+    .slider{
+        height: 217px;
+    }
+    .slide__wrapper{
+        height: 217px;
+    }
+    .slide__txt{
+        bottom: 97px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+    .slider__button{
+        right: 50%;
+        transform: translateX(50%);
+    }
+}

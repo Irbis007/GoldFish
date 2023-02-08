@@ -1,0 +1,59 @@
+
+.button{
+    background: linear-gradient(184.53deg, #F9A43F 5.27%, #FB791B 91.78%);
+    border: none;
+    color: white;
+    font-family: 'Trebuchet MS';
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+.button__transparent{
+    border: 2px solid rgba(249, 164, 63, 1);
+    background: none;
+    color: rgba(249, 164, 63, 1);
+}
+
+.commodity__slider-button{
+    padding: 9px 28px;
+    border-radius: 9px;
+    font-size: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 167px;
+}
+
+.commodity__slider-button .button-cart{
+    width: 22px;
+    height: 22px;
+}
+
+.big__button{
+    font-size: 23px;
+    width: 100%;
+    height: 100%;
+    border-radius: 9px;
+}
+
+.fos__19{
+    font-size: 19px;
+}
+
+.button__radius{
+    border-radius: 9px;
+}
+
+
+@media (max-width: 767px) {
+    .big__button{
+        font-size: 18px;
+    }
+    .fos__19{
+        font-size: 16px;
+    }
+}

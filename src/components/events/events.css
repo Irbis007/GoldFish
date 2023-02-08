@@ -1,0 +1,42 @@
+
+.events{
+    margin-top: 85px;
+}
+
+.events .events__title{
+    font-family: 'Trebuchet MS';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.events .events__content{
+    margin-top: 21px;
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.events .events__wrapper{
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.events .events__button{
+    width: 311px;
+    height: 71px;
+    margin: 0 auto;
+    margin-top: 38px;
+}
+
+
+@media (max-width: 767px) {
+    .events .events__button{
+        width: 170px;
+        height: 37px;
+    }
+}

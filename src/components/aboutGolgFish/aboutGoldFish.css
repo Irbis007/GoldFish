@@ -1,0 +1,61 @@
+
+.about__goldfish-section{
+    margin-top: 85px;
+    font-family: 'Trebuchet MS';
+}
+
+.about__goldfish-section .container{
+    display: grid;
+    grid-template-columns: repeat(2, 540px);
+    justify-content: space-between;
+    grid-template-rows: auto;
+}
+
+.about__goldfish-section .about__goldfish-title{
+    margin-bottom: 2px;
+}
+
+.about__goldfish-section .about__goldfish-text{
+    grid-column: 1/2;
+}
+
+.about__goldfish-section .about__goldfish-p{
+    margin-top: 19px;
+    font-size: 16px;
+    line-height: 120%;
+}
+
+.about__goldfish-section .about__goldfish-img{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 9px;
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+.about__goldfish-section .about__goldfish-img img{
+    width: 100%;
+}
+
+
+@media (max-width:1090px) {
+    .about__goldfish-section .container{
+        grid-template-columns: 540px;
+        justify-content: center;
+    }
+    .about__goldfish-section .about__goldfish-text{
+        grid-row: 4/5;
+
+    }
+    .about__goldfish-section .about__goldfish-img{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+}
+
+
+@media (max-width:767px) {
+    .about__goldfish-section .container{
+        grid-template-columns: auto;
+    }
+}

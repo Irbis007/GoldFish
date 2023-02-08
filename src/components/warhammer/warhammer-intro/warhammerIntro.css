@@ -1,0 +1,7 @@
+.warhammer__intro{
+    position: relative;
+    padding: 205px 0 225px 248px;
+    background: url('../../../images/warhammer-image.jpg') center center / cover no-repeat;
+    top: -52px;   
+    z-index: -1;
+}

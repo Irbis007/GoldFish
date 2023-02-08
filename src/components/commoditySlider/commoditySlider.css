@@ -1,0 +1,61 @@
+
+.commodity__slider-title{
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Trebuchet MS';
+    margin-top: 85px;
+}
+
+.commodity__slider{
+    margin-top: 23px;
+}
+
+.commodity__slider .slick-track{
+    padding-bottom: 20px;
+}
+
+.commodity__slider .slick-slide {
+    margin: 0 15px;
+}
+ 
+.commodity__slider .slick-list {
+    margin: 0 15px;
+}
+.commodity__slider .slick-list .slick-slide{
+    justify-content: center;
+}
+
+.commodity__slider .slick-next{
+    right: -50px !important;
+}
+
+.commodity__slider .slick-prev{
+    left: -50px !important;
+}
+
+.commodity__slider .slick-prev::before{
+    opacity: .50;
+    color: black;
+}
+
+.commodity__slider .slick-next::before{
+    opacity: .50;
+    color: black;
+}
+
+.commodity__slide-wrapper{
+    display: flex !important;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+@media (max-width:1230px) {
+    .commodity__slider .slick-next{
+        right: 20px !important;
+    }
+    
+    .commodity__slider .slick-prev{
+        left: 20px !important;
+    }
+}
+

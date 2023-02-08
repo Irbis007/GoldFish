@@ -1,0 +1,105 @@
+
+
+.about__center-item{
+    font-family: 'Trebuchet MS';
+    display: grid;
+    grid-template-rows: 26px auto;
+    grid-template-columns: repeat(2, minmax(300px, 540px));
+    column-gap: 30px;
+}
+
+.about__center-item.reverce .item__title{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+
+.about__center-item.reverce .item__descr{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+
+.about__center-item.reverce .item__images{
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+
+.about__center-item .item__title{
+    font-size: 22px;
+    font-weight: 700;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+
+.about__center-item .item__descr{
+    font-size: 16px;
+    max-width: 540px;
+    margin-top: 16px;
+    line-height: 120% ;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+
+.about__center-item .item__images{
+    display: grid;
+    grid-template-columns: repeat(2, 255px);
+    gap: 30px;
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+
+.about__center-item .item__images img{
+    border-radius: 9px;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 1110px) {
+    .about__center-item{
+        grid-template-columns: auto 520px;
+    }
+    .about__center-item.reverce{
+        grid-template-columns: 520px auto;
+    }
+    .about__center-item .item__descr{
+        font-size: 14px;
+    }
+    .about__center-item .item__images{
+        gap: 10px;
+    }
+}
+
+@media (max-width: 900px) {
+    .about__center-item, .about__center-item.reverce{
+        grid-template-columns: 520px;
+        justify-content: center;
+    }
+    .about__center-item .item__title, .about__center-item.reverce .item__title{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .about__center-item .item__descr, .about__center-item.reverce .item__descr{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .about__center-item .item__images, .about__center-item.reverce .item__images{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+}
+
+@media (max-width:540px) {
+    .about__center-item, .about__center-item.reverce{
+        grid-template-columns: auto;
+    }
+    .about__center-item .item__images, .about__center-item.reverce .item__images{
+        justify-content: space-around;
+        grid-template-columns: repeat(2, 45%);
+        grid-template-rows: 208px;
+    }
+}

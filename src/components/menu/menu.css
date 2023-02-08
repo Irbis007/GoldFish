@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+}
+
+.menu{
+    position: absolute;
+    top: 82px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Trebuchet MS";
+    font-weight: 700;
+    max-width: 1110px;
+    box-shadow: 5px 6px 15px rgba(251, 121, 27, 0.63);
+    background: #FFFBF8;
+    z-index: 100;
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.menu .container{
+    display: grid;
+    grid-template-columns: 255px auto;
+}
+
+.all__categories{
+    width: 100%;
+    min-height: 40px;
+    border-right: 2px solid rgba(42, 42, 42, 0.26);
+}
+
+.all__categories-top{
+    padding: 16px 82px 13px 61px;
+    font-size: 16px;
+    border-bottom: 2px solid rgba(42, 42, 42, 0.26);
+}
+
+.all__categories-close:before{
+    cursor: pointer;
+    position: absolute;
+    top: 14px;
+    left: 30px;
+    content: '';
+    height: 18px;
+    width: 2px;
+    background: #2a2a2a;
+    transform: rotate(45deg);
+}
+
+.all__categories-close:after{
+    cursor: pointer;
+    position: absolute;
+    top: 14px;
+    left: 30px;
+    content: '';
+    height: 18px;
+    width: 2px;
+    background: #2a2a2a;
+    transform: rotate(-45deg);
+}
+
+.menu__body{
+    padding: 17px 30px;
+}
+
+.category__name{
+    font-size: 20px;
+}
+
+.menu.active{
+    height: max-content;
+    transition: all 1s;
+}
+
+.menu__bottom{
+    display: none;
+}
+
+.background{
+    position: absolute;
+    top: 72px;
+    left: 0;
+    background: rgba(42, 42, 42, 0.65);
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
+
+.background.active{
+    display: block;
+    overflow: none;
+}
+
+@media (max-width: 991px) {
+    .menu .container{
+        grid-template-columns: 205px auto;
+    }
+    .all__categories-top{
+        padding: 16px 37px 13px 61px;
+        font-size: 14px;
+    }
+    .categories__list-item{
+        font-size: 14px;
+    }
+    .menu__body{
+        padding: 17px 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .menu{
+        top: 72px;
+        width: 268px;
+        left: 0;
+        transform: translateX(0);
+        box-shadow: none;
+    }
+    .menu .container{
+        grid-template-columns: 268px;
+    }
+    .menu__body{
+        display: none;
+    }
+    .all__categories{
+        border-right: none;
+    }
+    .categories__list{
+        border-bottom: 2px solid rgba(42, 42, 42, 0.26);
+    }
+    .all__categories-top{
+        display: none;
+    }
+    .menu__bottom{
+        display: block;
+    }
+}

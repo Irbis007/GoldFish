@@ -1,0 +1,25 @@
+
+
+
+.blog .blog__content .contetn__wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, .5fr);
+    grid-template-rows: 450px 350px;
+    height: 820px;
+    width: 100%;
+    grid-template-areas: 
+    'a a'
+    'b c'
+    ;
+    gap: 15px;
+}
+
+.blog .blog__content .contetn__wrapper .blog__item:nth-child(1){
+    grid-area: a;
+}
+.blog .blog__content .contetn__wrapper .blog__item:nth-child(2){
+    grid-area: b;
+}
+.blog .blog__content .contetn__wrapper .blog__item:nth-child(3){
+    grid-area: c;
+}

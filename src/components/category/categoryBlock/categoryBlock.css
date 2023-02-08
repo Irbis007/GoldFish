@@ -1,0 +1,46 @@
+
+
+.category__block{
+    border-radius: 9px;
+    position: relative;
+    overflow: hidden;
+}
+
+.category__block.category__block-main{
+    grid-row: 1/3;
+    grid-column: 1/2;
+}
+
+.category__block img{
+    width: 100%;
+}
+
+.category__block-bottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    padding: 12px 19px;
+
+    height: 46px;
+    background: #2A2A2A;
+    width: 100%;
+
+    font-family: 'Trebuchet MS';
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+@media (max-width:1110px) {
+    .category__block.category__block-main{
+        grid-column: 1/3;
+    }
+}
+
+@media (max-width: 767px) {
+    .category__block.category__block-main{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+}
